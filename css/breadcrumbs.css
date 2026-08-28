@@ -1,0 +1,21 @@
+body .breadcrumbs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.breadcrumbs a:last-child {
+    color: #fff;
+}
+
+.breadcrumbs span {
+    color: #999;
+    font-family: monospace;
+    margin: 0 5px;
+}

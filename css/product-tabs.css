@@ -1,0 +1,19 @@
+.product-tabs {
+    background: var(--card-bg);
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.product-tab {
+    padding: 10px 20px;
+}
+
+.product-tab a {
+    text-decoration: none;
+    color: #999;
+    font-weight: bold;
+}
+
+.product-tab-sku {
+    margin-left: auto;
+}

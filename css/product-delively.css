@@ -1,0 +1,66 @@
+.delivery-pickup-item {  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  gap: 10px;
+}
+
+.delivery-company-item{
+  display: flex;
+  justify-content: space-between;
+  color: #d76d61;
+}
+
+.delivery-info-bg-grey{
+  background-color: #999 !important;
+}
+
+.delivery-time{
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-availability-btn {
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #1d1d1d;
+}
+
+.bi-geo-alt-fill {
+  color: #168447;
+}
+
+.status-today {
+  color: #168447;
+}
+
+.status-free {
+  color: #999;
+}
+
+.city-select {
+    color: #fff;
+    font-weight: bold;
+}
+
+.modal-delivery-cities-input {
+  margin-bottom: 10px;
+}
+
+.modal-delivery-cities-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.modal-delivery-cities-list .city-item {
+  color: #999;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #999;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 35px;
+  /* padding: 5px; */
+}

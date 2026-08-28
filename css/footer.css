@@ -1,0 +1,40 @@
+.footer * {
+    /* outline: 1px solid rgba(127, 255, 212, 0.239); */
+}
+
+.footer {
+    /* outline: 1px solid rgba(127, 255, 212, 0.21); */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-subtitle {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer-item a {
+    color: #999;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.footer-products {
+    width: 50%;
+}
+
+.footer-products .footer-items {
+    column-count: 3;
+}
+
+.footer-services {}
+
+.footer-info {}
+
+.footer-contacts {}
+
+.footer-copyright {
+    text-align: center;
+}

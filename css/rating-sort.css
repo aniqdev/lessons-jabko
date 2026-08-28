@@ -1,0 +1,21 @@
+.rating-block {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #8e8e93;
+  justify-content: flex-end;
+}
+
+.stars {
+  color: #444; /* Колір сірих зірочок */
+}
+
+.stars .star.font-active {
+  color: #ffc107; /* Колір жовтих зірочок */
+}
+
+.reviews-count {
+  text-decoration: underline;
+  cursor: pointer;
+}

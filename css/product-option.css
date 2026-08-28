@@ -1,0 +1,72 @@
+.product-info-option {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 0px;
+}
+
+.product-choice_memory, .product-choice_version{
+    display: flex;
+    flex-direction: column;
+    gap: 6px; 
+}
+
+.option-title {
+    font-size: 14px;
+    color: #8a8a8a; 
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+}
+
+.btn-group {
+    font-weight: bold;
+}
+
+.info-icon {
+    color: #6a6a6a;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.info-icon:hover {
+    color: #aaaaaa;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 4px; 
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 40px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-white.active {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+.btn-ultra {
+    background-color: #221f26; /* Темний фіолетово-сірий відтінок */
+    color: #7ba1c7; /* Блакитний колір тексту та венка */
+    border: 1px solid #433d4c; /* Тонка рамка */
+}
+.btn-ultra:hover {
+    background-color: #2d2933;
+    border-color: #5c5469;
+}

@@ -1,0 +1,126 @@
+.product-reviews-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-reviews-rating {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-reviews-rating .rating-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product-reviews-rating .rating-stars {
+    color: #f7c34e;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.product-reviews-rating .rating-count {
+    color: #999;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.product-reviews-form {
+
+}
+
+.product-reviews-form .name-input {
+    background-color: var(--card-bg);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.product-reviews-form .name-input::placeholder {
+    color: #d4d4d4;
+}
+
+.product-reviews-form .form-rating {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.product-reviews-form .review-input {
+    background-color: var(--card-bg);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-reviews-form .review-input::placeholder {
+    color: #d4d4d4;
+}
+
+.product-reviews-form .submit-btn {
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.product-reviews-form .file-input {
+
+}
+
+.comments-list {
+
+}
+
+.comment-item {
+
+}
+
+.comment-author {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.comment-rating {
+    color: #f7c34e;
+    margin-bottom: 13px;
+    display: flex;
+    gap: 10px;
+}
+
+.comment-content {
+    font-weight: bold;
+}
+
+.comment-devider {
+    border-bottom: 1px solid #999;
+    margin-bottom: 13px;
+}
+
+.comment-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-like-btn {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.comment-icon {
+
+}

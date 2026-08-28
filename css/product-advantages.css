@@ -1,0 +1,58 @@
+/* Контейнер для блока (убираем лишние паддинги, если нужно) */
+.product-info-block.pd-cards-block {
+  background: transparent; /* Или цвет вашего общего фона, если необходимо */
+  padding: 0;
+  margin-bottom: 6px;
+  border: none;
+}
+
+/* Сетка из 4-х колонок */
+.product-info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px; 
+}
+
+/* Стили самой карточки */
+.info-card-item {
+  background: var(--card-bg);
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100px; 
+}
+
+
+.info-card-icon {
+  font-size: 24px;
+  margin-bottom: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Стили текста */
+.info-card-text {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700; /* Жирный шрифт как на скрине */
+  line-height: 1.3;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 992px) {
+  .product-info-cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2х2 на планшетах */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-info-cards-grid {
+    grid-template-columns: 1fr; /* В одну колонку на мелких телефонах */
+  }
+}
+

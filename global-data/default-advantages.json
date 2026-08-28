@@ -1,0 +1,26 @@
+[
+    {
+        "icon": "truck",
+        "text": "No options - just buy",
+        "icon_color": "lightgreen",
+        "text_color": "lightblue"
+    },
+    {
+        "icon": "pie-chart",
+        "text": "No options - just buy",
+        "icon_color": "lightgreen",
+        "text_color": "lightblue"
+    },
+    {
+        "icon": "shield-check",
+        "text": "No options - just buy",
+        "icon_color": "lightgreen",
+        "text_color": "lightblue"
+    },
+    {
+        "icon": "shield-check",
+        "text": "No options - just buy",
+        "icon_color": "lightgreen",
+        "text_color": "lightblue"
+    }
+]

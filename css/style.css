@@ -1,0 +1,81 @@
+@import url(/css/header.css);
+@import url(/css/breadcrumbs.css);
+@import url(/css/sort.css);
+@import url(/css/rating-sort.css);
+@import url(/css/product-tabs.css);
+@import url(/css/product-info.css);
+@import url(/css/product-advantages.css);
+@import url(/css/product-option.css);
+@import url(/css/product-recommend.css);
+@import url(/css/product-delively.css);
+@import url(/css/product-recomendations.css);
+@import url(/css/product-description.css);
+@import url(/css/product-characteristics.css);
+@import url(/css/product-reviews.css);
+@import url(/css/product-list.css);
+@import url(/css/pagination.css);
+@import url(/css/profile-form.css);
+@import url(/css/footer-2.css);
+
+:root {
+    --card-bg: #1d1d1d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #eaeaea;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.sliced-corners {
+    clip-path: polygon(10px 0%,
+            calc(100% - 10px) 0%,
+            100% 10px,
+            100% calc(100% - 10px),
+            calc(100% - 10px) 100%,
+            10px 100%,
+            0% calc(100% - 10px),
+            0% 10px);
+}
+
+.container {
+    max-width: 1680px;
+    width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1;
+}
+
+.info-circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 17px;
+    color: #000;
+    font-style: italic;
+    font-family: serif;
+    cursor: pointer;
+    user-select: none;
+}
+
+.info-circle.product-delivery-info:hover {
+    background-color: #ffffff !important; 
+    color: #1d1d1d !important;            
+    cursor: pointer;  
+}                    
+
