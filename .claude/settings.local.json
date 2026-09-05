@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l d:\\\\Wemp_\\\\projects\\\\jabko/css/*.css)",
+      "Bash(wc -l ./css/*.css)",
+      "Bash(find . -type d ! -path \"./vendor/*\" ! -path \"./.git/*\" ! -path \"./.claude/*\" -exec sh -c 'echo -n \"$1: \"; find \"$1\" -maxdepth 1 -type f | wc -l' _ {} \\\\;)"
+    ]
+  }
+}

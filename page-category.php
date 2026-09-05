@@ -27,7 +27,13 @@ if(!empty($_GET['search'])) {
             </div>
         </div>
         <div class="col-9">
-            <?php include 'page-category/product-list.php'; ?>
+            <?php 
+                if (isset($_GET['rotated'])) {
+                    include 'page-category/product-list-rotated.php';
+                } else {
+                    include 'page-category/product-list.php'; 
+                }
+            ?>
         </div>
     </div>
 

@@ -5,13 +5,13 @@
     padding: 0px;
 }
 
-.product-choice_memory, .product-choice_version{
+.product-info-option .product-choice_memory, .product-choice_version{
     display: flex;
     flex-direction: column;
     gap: 6px; 
 }
 
-.option-title {
+.product-info-option .option-title {
     font-size: 14px;
     color: #8a8a8a; 
     display: flex;
@@ -20,11 +20,11 @@
     font-weight: bold;
 }
 
-.btn-group {
+.product-info-option .btn-group {
     font-weight: bold;
 }
 
-.info-icon {
+.product-info-option .info-icon {
     color: #6a6a6a;
     display: inline-flex;
     align-items: center;
@@ -32,15 +32,15 @@
     transition: color 0.2s;
 }
 .info-icon:hover {
-    color: #aaaaaa;
+.product-info-option     color: #aaaaaa;
 }
 
-.btn-group {
+.product-info-option .btn-group {
     display: flex;
     gap: 8px;
 }
 
-.btn {
+.product-info-option .btn {
     font-size: 12px;
     font-weight: bold;
     padding: 8px 14px;
@@ -55,18 +55,19 @@
     transition: all 0.2s ease-in-out;
 }
 
-.btn-white.active {
+.product-info-option .btn-white.active {
     background-color: #ffffff;
     color: #000000;
     border-color: #ffffff;
 }
 
-.btn-ultra {
+.product-info-option .btn-ultra {
     background-color: #221f26; /* Темний фіолетово-сірий відтінок */
     color: #7ba1c7; /* Блакитний колір тексту та венка */
     border: 1px solid #433d4c; /* Тонка рамка */
 }
-.btn-ultra:hover {
+
+.product-info-option .btn-ultra:hover {
     background-color: #2d2933;
     border-color: #5c5469;
 }
