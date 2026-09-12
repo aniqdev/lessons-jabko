@@ -9,6 +9,8 @@ $search = $_GET['search'] ?? '';
 
 // pre_print($search);
 
+$productStore = get_products_store();
+
 $query = $productStore->createQueryBuilder();
 
 if ($search) {

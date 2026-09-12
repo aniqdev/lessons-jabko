@@ -111,3 +111,69 @@ function pre_print(mixed $data): void {
 function is_page(string $page): bool {
     return @$_GET['page'] === $page;
 }
+
+/*
+ * Render a view template from the views/ directory.
+ *
+ * The template has access to the passed variables and to all
+ * functions defined in this file (they live in the global scope).
+ *
+ * @param string $name   View name, dot-notation (e.g. "product.list" -> views/product/list.php)
+ * @param array  $data   Variables extracted into the template scope
+ * @return string        Rendered HTML
+ */
+function view(string $name, array $data = []): string {
+    $path = __DIR__ . '/views/' . str_replace('.', '/', $name) . '.view.php';
+
+    if (!is_file($path)) {
+        throw new InvalidArgumentException("View [{$name}] not found at {$path}");
+    }
+
+    extract($data, EXTR_SKIP);
+    unset($data, $name);
+
+    ob_start();
+    include $path;
+    return ob_get_clean();
+}
+
+
+function load_controller(): void {
+    
+    $page = @$_GET['page'];
+
+    if (!$page) {
+        $page = 'main';
+    }
+
+    $controller = __DIR__ . '/controllers/' . $page . '-controller.php';
+
+    if (is_file($controller)) {
+        include $controller;
+    } else {
+        include __DIR__ . '/controllers/not-found-controller.php';
+    }
+}
+
+
+function if_page_the_view(string $page, string $view, array $data = []): string {
+
+    if (is_page($page)) {
+        return view($view, $data);
+    }
+
+    return '';
+}
+
+
+function get_products_store(): \SleekDB\Store {
+
+    static $productStore = null;
+
+    if ($productStore === null) {
+        $databaseDirectory = __DIR__ . '/sleekdb';
+        $productStore = new \SleekDB\Store('products', $databaseDirectory, ['timeout' => false]);
+    }
+
+    return $productStore;
+}
