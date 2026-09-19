@@ -49,21 +49,21 @@
             <div class="col-9">
                 <?php 
                     if (isset($_GET['rotated'])) {
-                        // include 'page-category/product-list-rotated.php';
-                        echo view('pages.category.product-list-rotated');
+                        $productListView = 'pages.category.product-list-rotated';
                     } else {
-                        // include 'page-category/product-list.php';
-                        echo view('pages.category.product-list', [
-                            'pageNum' => $pageNum,
-                            'perPage' => $perPage,
-                            'search' => $search,
-                            'totalProducts' => $totalProducts,
-                            'products' => $products,
-                            'totalPages' => $totalPages,
-                            'prevPage' => $prevPage,
-                            'nextPage' => $nextPage,
-                        ]);
+                        $productListView = 'pages.category.product-list';
                     }
+                    
+                    echo view($productListView, [
+                        'pageNum' => $pageNum,
+                        'perPage' => $perPage,
+                        'search' => $search,
+                        'totalProducts' => $totalProducts,
+                        'products' => $products,
+                        'totalPages' => $totalPages,
+                        'prevPage' => $prevPage,
+                        'nextPage' => $nextPage,
+                    ]);
                 ?>
             </div>
         </div>
