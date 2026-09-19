@@ -1,21 +1,16 @@
-<?php
+<?php 
 
-/** @var object $productStore */
+echo view('pages.product.page-product.product-tabs', ['product' => $product]);
 
-$productId = (int)$_GET['product-id'];
+echo view('pages.product.page-product.product-info', ['product' => $product]);
 
-$product = $productStore->findById($productId);
+echo view('pages.product.page-product.product-recommendations', ['product' => $product]);
 
-?>
+echo view('pages.product.page-product.product-description', ['product' => $product]);
 
-<?= view('pages.product.page-product.product-tabs', ['product' => $product]); ?>
+echo view('pages.product.page-product.product-characteristics', ['product' => $product]);
 
-<?= view('pages.product.page-product.product-info', ['product' => $product]); ?>
-
-<?= view('pages.product.page-product.product-recomendations', ['product' => $product]); ?>
-
-<?= view('pages.product.page-product.product-description', ['product' => $product]); ?>
-
-<?= view('pages.product.page-product.product-characteristics', ['product' => $product]); ?>
-
-<?= view('pages.product.page-product.product-reviews', ['product' => $product]); ?>
+echo view('pages.product.page-product.product-reviews', [
+    'product' => $product,
+    'defaultAdvantagesData' => $defaultAdvantagesData,
+]); 

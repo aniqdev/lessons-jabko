@@ -1,7 +1,13 @@
 <?php
 /** @var object $productData */
 
-    // $product = get_current_product();
+if (isset($_GET['product']) && file_exists('product-data/' . $_GET['product'] . '.json')) {
+    $productJson = file_get_contents('product-data/' . $_GET['product'] . '.json');
+    $productData = json_decode($productJson);
+} else {
+    $productJson = file_get_contents('product-404.json');
+    $productData = json_decode($productJson);
+}
 
 ?>
 <div class="product-reviews product-info-block">
