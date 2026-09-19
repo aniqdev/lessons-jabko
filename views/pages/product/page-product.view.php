@@ -13,4 +13,4 @@ echo view('pages.product.page-product.product-characteristics', ['product' => $p
 echo view('pages.product.page-product.product-reviews', [
     'product' => $product,
     'defaultAdvantagesData' => $defaultAdvantagesData,
-]); 
+]);
